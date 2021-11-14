@@ -46,6 +46,8 @@ section {
   padding: 3rem 9%;
 }
 .canvas{
+  width: 100vw;
+  height: 100vh;
   filter: blur(0.7);
 
 }
@@ -220,7 +222,7 @@ section {
 .about-box h1 {
   color: rgb(247, 209, 255);
   font-family: 'Orbitron', sans-serif;
-  font-size: 7rem;
+  font-size: 3rem;
   position: absolute;
   text-align: center;
   margin-top: -32%;
@@ -391,7 +393,7 @@ video {
       -ms-flex: 1 1 20rem;
           flex: 1 1 20rem;
   border-radius: .5rem;
-  background: rgb(247, 209, 255);
+  background:rgb(49, 49, 49) ;
   -webkit-box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.05);
           box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.05);
   display: -webkit-box;
@@ -406,7 +408,7 @@ video {
 
 .about .content .icons-container .icons h3 {
   font-size: 1.7rem;
-  color: #130f40;
+  color: rgb(161, 159, 159);
 }
 
 .destination .box-container {
