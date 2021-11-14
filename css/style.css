@@ -154,47 +154,79 @@ section {
   cursor: pointer;
   display: none;
 }
-.home{
-  background-image: linear-gradient(rgba(49, 46, 46, 0.7),rgba(46, 42, 42, 0.7)),url(../assests/bg-masthead.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  text-align: center;
-  width:100vw;
-  height: 100vh;
-}
-.landingText{
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-}
 
+.home {
+  margin: 0 auto;
+  margin-top: 8rem;
+  width: 100vw;
+  
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 17, 17, 0.7)), to(rgba(17, 17, 17, 0.7))), url(../images/home-bg.jpg) no-repeat;
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../images/bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 80vh;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 5rem;
+}
 
 .home .content {
   text-align: center;
 }
 
+.home .content span {
+  font-weight: bolder;
+  color: transparent;
+  -webkit-text-stroke: 0.1rem #fff;
+  font-size: 4vw;
+  display: block;
+}
 
-/* .about-box h1 {
+.home .content h3 {
+  font-size: 6vw;
+  color: rgb(247, 209, 255);
+}
+
+.home .content p {
+  max-width: 60rem;
+  margin: 1rem auto;
+  font-size: 1.4rem;
+  color: #aaa;
+  line-height: 2;
+}
+#about_anchor{
+  overflow-x: hidden;
+}
+
+.about-box h1 {
   color: rgb(247, 209, 255);
   font-family: 'Orbitron', sans-serif;
   font-size: 3rem;
-position: absolute;
+position: relative;
   text-align: center;
-  margin-top: -25%;
-  margin-left: 35%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
 }
 
 .about-text {
   color: white;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-family: 'Space Mono', monospace;
   text-align: center;
-
+  position: absolute;
   overflow: hidden;
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: center;
   white-space: nowrap;
   border-right: 2px solid rgba(255,255,255,.75);
@@ -210,7 +242,7 @@ position: absolute;
 @keyframes blinkTextCursor{
   from{border-right-color: rgba(255,255,255,.75);}
   to{border-right-color: transparent;}
-} */
+}
 
 
 /* Responsiveness */
@@ -296,7 +328,7 @@ video {
       -ms-flex-align: center;
           align-items: center;
   gap: 2rem;
-  background: #111;
+  background-image:url("assests/bg.jpg") ;
 }
 
 .about .image {
@@ -334,7 +366,7 @@ video {
   color: rgb(226, 200, 200);
 }
  .icon{
-   color: #aaa;
+   color:rgb(247, 209, 255) ;
  }
 .about .content .icons-container {
   margin-top: 2rem;
@@ -354,7 +386,7 @@ transition: 0.8s;
       -ms-flex: 1 1 20rem;
           flex: 1 1 20rem;
   border-radius: .5rem;
-  background:rgb(39, 37, 37) ;
+  background:rgb(22, 22, 22) ;
   -webkit-box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.05);
           box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.05);
   display: -webkit-box;
@@ -775,7 +807,9 @@ transition: 0.8s;
     font-size: 2rem;
     display: block;
   }
-
+  .home {
+    margin-top: 10rem;
+  }
   .home .content span {
     font-size: 8vw;
   }
