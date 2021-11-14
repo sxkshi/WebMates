@@ -9,7 +9,7 @@
   outline: none;
   border: none;
   text-decoration: none;
-  
+
   -webkit-transition: all .2s linear;
   transition: all .2s linear;
 }
@@ -21,7 +21,7 @@ html {
   font-size: 62.5%;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  scroll-padding-top: 9rem;
+
 }
 
 html::-webkit-scrollbar {
@@ -51,7 +51,22 @@ section {
   filter: blur(0.7);
 
 }
-
+.headline{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;color: #fff;
+  overflow-x: hidden;
+}
+@media (max-width: 991px) {
+.headline{
+  font-size: 30px;
+  display: flex;
+  align-items: center!important;
+  justify-content: center!important;
+  text-align: center!important;
+}
+}
 .heading {
   text-align: center;
   margin-bottom: 2rem;
@@ -106,13 +121,15 @@ section {
 
 .header .navbar a {
   font-size: 1.7rem;
-  color: #aaa;
+  color: rgb(224, 203, 203);
   display: inline-block;
   margin: 0 1rem;
 }
 
+
 .header .navbar a:hover {
-  color: #e274fd;
+    border-bottom: 5px solid #e274fd;
+  letter-spacing: 2px;
 }
 
 .header .btn {
@@ -185,6 +202,9 @@ section {
   color: #aaa;
   line-height: 2;
 }
+#about_anchor{
+  overflow-x: hidden;
+}
 /* about */
 /* .about {
   height: 100vh;
@@ -219,7 +239,7 @@ section {
   align-items: center;
 }*/
 
-.about-box h1 {
+/* .about-box h1 {
   color: rgb(247, 209, 255);
   font-family: 'Orbitron', sans-serif;
   font-size: 3rem;
@@ -227,26 +247,25 @@ section {
   text-align: center;
   margin-top: -32%;
   margin-left: 16%;
-}
+} */
 
 .about-text {
   color: white;
   font-size: 1.8rem;
-  position: absolute;
   font-family: 'Space Mono', monospace;
   text-align: center;
-  margin-top: -22%;
-  margin-left: 35%;
+
   overflow: hidden;
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
   white-space: nowrap;
   border-right: 2px solid rgba(255,255,255,.75);
-  transform: translateY(-50%);
   animation: typewriter 4s steps(44) 1s 1 normal both,
-             blinkTextCursor 500ms steps(44) infinite normal;  
-  
-  
-} 
+             blinkTextCursor 500ms steps(44) infinite normal;
+
+
+}
 @keyframes typewriter{
   from{width: 0;}
   to{width: 24em;}
@@ -375,7 +394,7 @@ video {
   padding: 1rem 0;
   line-height: 2;
   font-size: 1.4rem;
-  color: #666;
+  color: rgb(226, 200, 200);
 }
 
 .about .content .icons-container {
@@ -393,7 +412,11 @@ video {
       -ms-flex: 1 1 20rem;
           flex: 1 1 20rem;
   border-radius: .5rem;
+<<<<<<< HEAD
   background:rgb(49, 49, 49) ;
+=======
+  background: rgb(219, 149, 233);
+>>>>>>> 3a74610ec994a330c11a31b6bcff41df024a5372
   -webkit-box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.05);
           box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.05);
   display: -webkit-box;
