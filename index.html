@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Essence Fest 2021 is here! Come with us and experience our journey to the cosmos">
+    <!-- <meta name="description" content="Essence Fest 2021 is here! Come with us and experience our journey to the cosmos">
     <meta property="og:title" content="dummy" />
     <meta property="og:description" content="dummy description" />
     <meta property="og:url" content="https://dummy.netlify.app/" />
-    <meta property="og:site_name" content="Essence Fest" />
+    <meta property="og:site_name" content="Essence Fest" /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
@@ -24,7 +24,7 @@
 
 
     <!-- custom js file link  -->
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 
 </head>
 <body>
@@ -38,11 +38,11 @@
     <a href="#" class="logo"> <i class="fas fa-space-shuttle"></i>COSMOS</a>
 
     <nav class="navbar">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#destination">Destination</a>
-        <a href="#services">Services</a>
-        <a href="#price">Packages</a>
+        <a class="nav-link nav-link-ltr" href="#home" >Home</a>
+        <a class="nav-link nav-link-ltr" href="#about">About</a>
+        <a class="nav-link nav-link-ltr" href="#destination">Destination</a>
+        <a class="nav-link nav-link-ltr" href="#price">Packages</a>
+        <a class="nav-link nav-link-ltr" href="#review">Reviews</a>
     </nav>
 
     <a href="booking.html" class="btn">Book now</a>
@@ -52,26 +52,32 @@
 <!-- header section ends -->
 
 <!-- home section starts  -->
+<section class="about" id="home">
+<div class="about panel" id="about_anchor" id ="home">
 
-<div class="about panel" id="about_anchor">
-        <canvas id="canvas" class="canvas"> </canvas>
-        <script src="canvas.js"> <div class="about-box">
-        </div></script>
+        <div id="canvas" class="canvas">
+
+        </div>
+
+        <script src="canvas.js">
+        </script>
+
   <img id="astronaut" alt="astronaut" src= "assests/astronaut.webp">
+            <div class="headline">COSMOS SPACELINES
+        <p class="about-text anim-typewriter">Taking you to the Stars and Beyond...</p>
+        </div>
   <img id="planet" alt="planet"  src="assests/moon.png">
-
-  <div class="about-box">
-      <h1>COSMOS SPACELINES</h1>
-      <p class="about-text anim-typewriter">Taking you to the Stars and Beyond...</p>
-  </div>
 </div>
+</section>
+
+
 
 <!-- home section ends -->
 <section class="about" id="about">
 
     <div class="image">
         <img src="assests/space6.png" alt="">
-        
+
     </div>
 
     <div class="content">
@@ -79,9 +85,9 @@
         <h3 class="title">Why Choose Us?</h3><br>
 
         <p>* We maintain a constant g throughout the journey to ensure the comfort of travellers <br>
-            
-            * Our spaceships are powered by Epstein drive (most advanced version of fusion drives) enabling 
-            Humanity to travel faster and farther.<br> 
+
+            * Our spaceships are powered by Epstein drive (most advanced version of fusion drives) enabling
+            Humanity to travel faster and farther.<br>
 
             * We provide Food Pills of every cuisine during the travel.They are very Delicious
                and filling!</p>
@@ -124,7 +130,7 @@
             </div>
             <div class="content">
                 <h3>Titan</h3>
-                <p>Titan is Saturn's largest moon and the second-largest moon in the solar system. 
+                <p>Titan is Saturn's largest moon and the second-largest moon in the solar system.
                    Its the only place besides Earth where there’s been clear evidence of lakes on the surface.</p>
                 <a href="#">Check Flights <i class="fas fa-angle-right"></i></a>
             </div>
@@ -136,7 +142,7 @@
             </div>
             <div class="content">
                 <h3>Valles Marineris</h3>
-                <p>One of the largest Canyon in the solar system, this canyon on the planet Mars is  
+                <p>One of the largest Canyon in the solar system, this canyon on the planet Mars is
                     4 times longer than the great canyon. It is along the equator of Mars.
                     So what are you waiting for? Hop In!
                     </p>
@@ -150,10 +156,10 @@
             </div>
             <div class="content">
                 <h3>Europa</h3>
-                <p>Europa is a  Galilean satellite covered by ice. 
+                <p>Europa is a  Galilean satellite covered by ice.
                     The ice is probably about 150 km thick, but below that may be an ocean of liquid water .
                     So Join In to explore an unseen ocean!
-                    
+
                     </p>
                 <a href="#">Check Flights <i class="fas fa-angle-right"></i></a>
             </div>
@@ -165,7 +171,7 @@
             </div>
             <div class="content">
                 <h3>Ceres</h3>
-                <p>Ceres is a world that defies expectations. 
+                <p>Ceres is a world that defies expectations.
                     It’s the largest asteroid in the solar system, so large that it’s categorized as a dwarf planet.
                     Time to take off to Ceres is it?!
                    </p>
@@ -180,7 +186,7 @@
             <div class="content">
                 <h3>Olympus Mons</h3>
                 <p>Ever Wondered how mesmerising a volcano would be?
-                     Well Good news for all of you 
+                     Well Good news for all of you
                       , Mars has the largest volcano in the solar system
                       – Olympus Mons and we could take you there !</p>
                 <a href="#">Check Flights <i class="fas fa-angle-right"></i></a>
@@ -194,7 +200,7 @@
             <div class="content">
                 <h3>The Martian Polar Ice Caps</h3>
                 <p>Mars has two ice caps that grow and shrink with the change of seasons.
-                      It holds important clues to how the 
+                      It holds important clues to how the
                       climate has changed over its lifetime.</p>
                 <a href="#">Check Flights <i class="fas fa-angle-right"></i></a>
             </div>
@@ -207,7 +213,7 @@
             <div class="content">
                 <h3>The Earth's Moon</h3>
                 <p>How can one forget our very own natural satellite , The Moon .
-                     Tired of adoring the moon from the window of your home? Hop in and join us to our 
+                     Tired of adoring the moon from the window of your home? Hop in and join us to our
                      journey to Moon.</p>
                 <a href="#">Check Flights <i class="fas fa-angle-right"></i></a>
             </div>
@@ -219,7 +225,7 @@
             </div>
             <div class="content">
                 <h3>Pluto</h3>
-                <p>It’s one of the most eccentric and unexpectedly active planets in the solar system. 
+                <p>It’s one of the most eccentric and unexpectedly active planets in the solar system.
                     It displays a wide range of colors, from icy white to charcoal black to deep red.</p>
                 <a href="#">Check Flights <i class="fas fa-angle-right"></i></a>
             </div>
@@ -236,13 +242,64 @@
 
 <!-- services section ends -->
 
+<!-- packagessection starts  -->
+
+<section class="price" id="price">
+
+    <h1 class="heading"> <span>Our Packages</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3 class="title">Economy Class</h3>
+            <h3 class="amount">£250.99</h3>
+            <ul>
+                <li><i class="fas fa-check"></i>Good Service </li>
+                <li> <i class="fas fa-check"></i> Safest Travel  </li>
+                <li> <i class="fas fa-check"></i> Value for time  </li>
+                <li> <i class="fas fa-check"></i>  Value for money </li>
+            </ul>
+            <a href="#" class="btn">Check out</a>
+        </div>
+        <div class="box">
+            <h3 class="title">Business Class</h3>
+            <h3 class="amount">£650.99</h3>
+            <ul>
+                <li><i class="fas fa-check"></i> Luxurious Service </li>
+                <li> <i class="fas fa-check"></i> Recliner Seats </li>
+                <li> <i class="fas fa-check"></i> More Legroom </li>
+                <li> <i class="fas fa-check"></i> Food and Drinks </li>
+
+            </ul>
+            <a href="#" class="btn">Check out</a>
+        </div>
+        <div class="box">
+            <h3 class="title">First Class</h3>
+            <h3 class="amount">£450.99</h3>
+            <ul>
+                <li><i class="fas fa-check"></i>Elevated Service </li>
+                <li> <i class="fas fa-check"></i> Bar service </li>
+                <li> <i class="fas fa-check"></i> Widest seats </li>
+                <li> <i class="fas fa-check"></i> A la carte dining </li>
+            </ul>
+            <a href="#" class="btn">Check out</a>
+        </div>
+
+
+
+    </div>
+
+
+</section>
+
+<!-- packages section ends -->
 
 <!-- review section starts  -->
 
-<section class="review">
+<section class="review" id="review">
 
     <div class="content">
-        <span>Testimonials</span>
+        <span>Customer Reviews</span>
         <h3>What do our Passengers think?</h3>
         <p>For us at Cosmos Spacelines, our passengers are of utmost importance and their reviews help us strive for
             the perfect Space journey for you.   </p>
@@ -251,7 +308,7 @@
     <div class="box-container">
 
         <div class="box">
-            <p>My father Elon Musk always wanted me to travel space, and so I did with the 
+            <p>My father Elon Musk always wanted me to travel space, and so I did with the
                 help of Cosmos.Best experience of my life yet!
             </p>
             <div class="user">
@@ -263,10 +320,10 @@
             </div>
         </div>
         <div class="box">
-            <p>Travelling via Cosmos was a so Good that I plan on elevating 
+            <p>Travelling via Cosmos was a so Good that I plan on elevating
                 Delhi public transport to this great level!  </p>
             <div class="user">
-                <img src="images/pic-2.png" alt="">
+                <img src="images/pic-1.jpg"alt="">
                 <div class="info">
                     <h3>Arvind Kejriwal</h3>
                     <span>Politician</span>
@@ -274,11 +331,11 @@
             </div>
         </div>
         <div class="box">
-            <p>I wanted a destination wedding on the Moon , and Cosmos's luxurious flight just added 
+            <p>I wanted a destination wedding on the Moon , and Cosmos's luxurious flight just added
                 on to my great wedding.Loved the diet Food pills!
             </p>
             <div class="user">
-                <img src="images/pic-3.png" alt="">
+                <img src="images/pic-1.jpg" alt="">
                 <div class="info">
                     <h3>Gigi Hadid</h3>
                     <span>Model</span>
@@ -302,57 +359,6 @@
 
 <!-- review section ends -->
 
-<!-- blogs section starts  -->
-
-<section class="price" id="price">
-
-    <h1 class="heading"> <span>Our Packages</span> </h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <h3 class="title">Economy Class</h3>
-            <h3 class="amount">$250.99</h3>
-            <ul>
-                <li><i class="fas fa-check"></i>Good Service </li>
-                <li> <i class="fas fa-check"></i> Safest Travel  </li>
-                <li> <i class="fas fa-check"></i> Value for time  </li>
-                <li> <i class="fas fa-check"></i>  Velue for money </li>
-            </ul>
-            <a href="#" class="btn">Check out</a>
-        </div>
-
-        <div class="box">
-            <h3 class="title">First Class</h3>
-            <h3 class="amount">$450.99</h3>
-            <ul>
-                <li><i class="fas fa-check"></i>Elevated Service </li>
-                <li> <i class="fas fa-check"></i> Safest Travel  </li>
-                <li> <i class="fas fa-check"></i> Value for time </li>
-                <li> <i class="fas fa-check"></i> Food and Drinks </li>
-            </ul>
-            <a href="#" class="btn">Check out</a>
-        </div>
-
-        <div class="box">
-            <h3 class="title">Business Class</h3>
-            <h3 class="amount">$650.99</h3>
-            <ul>
-                <li><i class="fas fa-check"></i>Luxurious Service </li>
-                <li> <i class="fas fa-check"></i> Safest Travel  </li>
-                <li> <i class="fas fa-check"></i> Value for time </li>
-                <li> <i class="fas fa-check"></i> Food and Drinks </li>
-                
-            </ul>
-            <a href="#" class="btn">Check out</a>
-        </div>
-
-    </div>
-
-
-</section>
-
-<!-- blogs section ends -->
 
 <!-- banner section starts  -->
 

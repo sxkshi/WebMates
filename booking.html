@@ -10,52 +10,81 @@
     <title>Nebulair</title>
 </head>
 <body>
-  <header class="header">
+<header class="header">
 
-      <div id="menu-btn" class="fas fa-bars"></div>
+    <div id="menu-btn" class="fas fa-bars"></div>
 
-      <a data-aos="zoom-in-left" data-aos-delay="150" href="#" class="logo"> <i class="fas fa-paper-plane"></i>travel </a>
+    <a href="#" class="logo"> <i class="fas fa-space-shuttle"></i>COSMOS</a>
 
-      <nav class="navbar">
-          <a data-aos="zoom-in-left" data-aos-delay="300" href="index.html">home</a>
-          <a data-aos="zoom-in-left" data-aos-delay="450" href="#about">about</a>
-          <a data-aos="zoom-in-left" data-aos-delay="600" href="#destination">destination</a>
-          <a data-aos="zoom-in-left" data-aos-delay="750" href="#services">services</a>
-          <a data-aos="zoom-in-left" data-aos-delay="900" href="#gallery">gallery</a>
-          <a data-aos="zoom-in-left" data-aos-delay="1150" href="#blogs">blogs</a>
-      </nav>
+    <nav class="navbar">
+        <a class="nav-link nav-link-ltr" href="#home" >Home</a>
+        <a class="nav-link nav-link-ltr" href="#about">About</a>
+        <a class="nav-link nav-link-ltr" href="#destination">Destination</a>
+        <a class="nav-link nav-link-ltr" href="#price">Packages</a>
+        <a class="nav-link nav-link-ltr" href="#review">Reviews</a>
+    </nav>
+</header>
+                <!--<div class="title">
+                    <span>Book Tickets</span>
+                </div>-->
+      <div class="bgimage">
+            <div class="flight-list">
 
 
-  </header>
+                <div class="search">
+                    <i class="fa fa-search fa-lg"></i>
+
+                    <div class="source-field">
+                        <input type="text" placeholder="From" onchange="search(this.value, 1)">
+                        <i class="fa fa-plane"></i>
+                    </div>
+                    <!-- <h3 class="heading1"><span>Select your flights </span> HERE </h3> -->
+
+                    <div class="dest-field">
+                        <input type="text" placeholder="To" onchange="search(this.value, 2)">
+
+                    </div>
+                </div>
+
+
+                <div class="wrapper">
+                    <div class="headings">
+                        <span>Flight No.</span>
+                        <span>Source</span>
+                        <span>Destination</span>
+                        <span>Departure</span>
+                        <span>Arrival</span>
+                        <span>Fare <br><p class="footnote">QUIDS (Qd)</p></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<section class="section">
+            <div class="brands-center container">
+            <div class="brand">
+                <img src="images/brand2.png" alt="" />
+            </div>
+            <div class="brand">
+                <img src="images/brand2.png" alt="" />
+            </div>
+            <div class="brand">
+                <img src="images/brand2.png" alt="" />
+            </div>
+            <div class="brand">
+                <img src="images/brand2.png" alt="" />
+            </div>
+            <div class="brand">
+                <img src="images/brand2.png" alt="" />
+            </div>
+            </div>
+        </section>-->
 
     <main>
-        <div class="flight-list">
-            <div class="title">
-                <span>Book Tickets</span>
-            </div>
-            <div class="search">
-                <div class="source-field">
-                    <input type="text" placeholder="From" onchange="search(this.value, 1)">
-                    <i class="fa fa-search fa-lg"></i>
-                </div>
-                <div class="dest-field">
-                    <input type="text" placeholder="To" onchange="search(this.value, 2)">
-                    <i class="fa fa-search fa-lg"></i>
-                </div>
 
-            </div>
-            <div class="wrapper">
-                <div class="headings">
-                    <span>Source</span>
-                    <span>Destination</span>
-                    <span>Departure</span>
-                    <span>Arrival</span>
-                    <span>Fare </span>
-                </div>
-            </div>
-            <p class="footnote">*All prices are in Star-bucks (Sb)</p>
-        </div>
         <div class="container" style="display: none;">
+          <div class="seating">
+              <img src="assests/travelling.png">
+          </div>
             <div class="details">
                 <div class="title">
                     <span>Ticket Details</span>
@@ -63,11 +92,11 @@
                 <div class="selected-flight">
                 </div>
                 <div class="ticket-class">
-                    <select id="aukaat" class="input">
+                    <select id="flightclass" class="input">
                         <option value="" disabled selected>Select Class</option>
                         <option value="Economy">Economy</option>
-                        <option value="Business Class">Business Class (500 Sb extra)</option>
-                        <option value="First Class">First Class (1000 Sb extra)</option>
+                        <option value="Business Class">Business Class (500 Qd extra)</option>
+                        <option value="First Class">First Class (1000 Qd extra)</option>
                     </select>
                 </div>
                 <div>
@@ -115,9 +144,7 @@
                     <span class="btn-text" onClick="showReceipt()">Confirm</span>
                 </div>
             </div>
-            <div class="seating">
-                <img src="images/seating.png">
-            </div>
+
 
         </div>
         <div class="receipt" style="display: none;">
