@@ -396,7 +396,9 @@ video {
   font-size: 1.4rem;
   color: rgb(226, 200, 200);
 }
-
+ .icon{
+   color: #aaa;
+ }
 .about .content .icons-container {
   margin-top: 2rem;
   display: -webkit-box;
@@ -412,11 +414,7 @@ video {
       -ms-flex: 1 1 20rem;
           flex: 1 1 20rem;
   border-radius: .5rem;
-<<<<<<< HEAD
-  background:rgb(49, 49, 49) ;
-=======
-  background: rgb(219, 149, 233);
->>>>>>> 3a74610ec994a330c11a31b6bcff41df024a5372
+  background:rgb(22, 22, 22) ;
   -webkit-box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.05);
           box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.05);
   display: -webkit-box;
