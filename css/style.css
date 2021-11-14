@@ -205,49 +205,16 @@ section {
 #about_anchor{
   overflow-x: hidden;
 }
-/* about */
-/* .about {
-  height: 100vh;
-  width: 100vw;
-  background-image: url("../assests/background.gif");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.about-box {
-  min-height: 70vh;
-  width: 60vw;
-  z-index: 2;
-
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  opacity: 0.9;
-
-  background-color: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(10px);
-  box-shadow: white(125, 218, 255, 0.603) 0px 3px 2px 3px;
-
-  border-radius: 30px;
-  border: white solid 5px;
-  position: absolute;
-  top: 15vh;
-  left: 20vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}*/
 
 /* .about-box h1 {
   color: rgb(247, 209, 255);
   font-family: 'Orbitron', sans-serif;
   font-size: 3rem;
-  position: absolute;
+position: absolute;
   text-align: center;
-  margin-top: -32%;
-  margin-left: 16%;
-} */
+  margin-top: -25%;
+  margin-left: 35%;
+}
 
 .about-text {
   color: white;
@@ -273,7 +240,7 @@ section {
 @keyframes blinkTextCursor{
   from{border-right-color: rgba(255,255,255,.75);}
   to{border-right-color: transparent;}
-}
+} */
 
 
 /* Responsiveness */
@@ -312,7 +279,7 @@ video {
   right: 14vw;
   width: 10rem;
   height: auto;
-  top: 5vh;
+  top: 10vh;
   margin: auto;
   z-index: 3;
   animation: astronaut 2s ease-in-out infinite alternate;
@@ -408,7 +375,10 @@ video {
       flex-wrap: wrap;
   gap: 1.5rem;
 }
-
+.about .content .icons-container .icons:hover {
+border: 0.2rem solid #e274fd;
+transition: 0.8s;
+}
 .about .content .icons-container .icons {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 20rem;
@@ -477,7 +447,7 @@ video {
 .destination .box-container .box .content p {
   padding: 1rem 0;
   font-size: 1.4rem;
-  color: #aaa;
+  color: rgb(226, 200, 200);
   line-height: 2;
 }
 
@@ -597,7 +567,7 @@ video {
   font-size: 1.4rem;
   padding-bottom: 1rem;
   line-height: 2;
-  color: #aaa;
+  color:rgb(226, 200, 200);
 }
 
 .review .box-container .box .user {
@@ -857,4 +827,3 @@ video {
     font-size: 2.7rem;
   }
 }
-/*# sourceMappingURL=style.css.map */

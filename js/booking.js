@@ -1,3 +1,5 @@
+
+
 let flightData = [
    {
       'fno': '6A6490',
@@ -63,6 +65,7 @@ let flightData = [
        'arr': '08:00',
        'price': '3590'
     },
+
 ];
 
 
@@ -106,10 +109,14 @@ function showReceipt() {
      alert('Please choose a travel class.');
      return;
   }
-  if (adult === '' || children === '') {
-     alert('Please enter number of adults/children.');
+  if (adult === '') {
+     alert('Please enter number of adults.');
      return;
   }
+  if (children === '') {
+   alert('Please enter number of children.');
+   return;
+}
   if (date === '') {
      alert('Please select a date.');
      return;
@@ -131,9 +138,9 @@ function showReceipt() {
   else addons = "None";
 
   price = parseInt(price);
-  price = price + (addonCount * 300);
-  if (travelClass === 'Business Class') price += 500;
-  else if (travelClass === 'First Class') price += 1000;
+  price = price + (addonCount * 599);
+  if (travelClass === 'Business Class') price += 800;
+  else if (travelClass === 'First Class') price += 1500;
   price = price * (adult + 0.5 * children);
 
   (document.getElementsByClassName('flight-data')[0]).innerHTML = `
@@ -154,7 +161,7 @@ function showReceipt() {
      <div> Addons </div>
      <div> ${addons} </div>
      <div> Total Fare </div>
-     <div> ${price} Sb</div>`;
+     <div> £ ${price}</div>`;
   (document.getElementsByClassName('flight-list')[0]).style.display = "none";
   (document.getElementsByClassName('container')[0]).style.display = "none";
   (document.getElementsByClassName('receipt')[0]).style.display = "grid";
@@ -175,7 +182,6 @@ function search(val, type) {
   wrapper.innerHTML = '<div class="headings"><span>Source</span><span>Destination</span><span>Departure</span><span>Arrival</span><span>Fare</span></div>';
   for (let i = 0; i < flightDataNew.length; i++) {
       let str = `<div class="data" onClick="bookFlight(this)"=>
-                  <span>${flightDataNew[i].fno}</span>
                   <span>${flightDataNew[i].src}</span>
                   <span>${flightDataNew[i].dest}</span>
                   <span>${flightDataNew[i].dep}</span>

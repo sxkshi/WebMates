@@ -7,7 +7,10 @@
     <link rel="stylesheet" type="text/css" href="css/booking.css">
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <title>Nebulair</title>
+    <title>Cosmos Airlines</title>
+        <!-- custom js file link  -->
+    <script src="js/script1.js" defer></script>
+
 </head>
 <body>
 <header class="header">
@@ -17,19 +20,15 @@
     <a href="#" class="logo"> <i class="fas fa-space-shuttle"></i>COSMOS</a>
 
     <nav class="navbar">
-        <a class="nav-link nav-link-ltr" href="#home" >Home</a>
-        <a class="nav-link nav-link-ltr" href="#about">About</a>
-        <a class="nav-link nav-link-ltr" href="#destination">Destination</a>
-        <a class="nav-link nav-link-ltr" href="#price">Packages</a>
-        <a class="nav-link nav-link-ltr" href="#review">Reviews</a>
+        <a href="index.html">Home</a>
+        <a href="index.html">About</a>
+        <a href="index.html">Destination</a>
+        <a href="index.html">Packages</a>
+        <a href="index.html">Reviews</a>
     </nav>
 </header>
-                <!--<div class="title">
-                    <span>Book Tickets</span>
-                </div>-->
-      <div class="bgimage">
-            <div class="flight-list">
-
+        <div class="flight-list">
+            <div class="bgimage">
 
                 <div class="search">
                     <i class="fa fa-search fa-lg"></i>
@@ -38,7 +37,6 @@
                         <input type="text" placeholder="From" onchange="search(this.value, 1)">
                         <i class="fa fa-plane"></i>
                     </div>
-                    <!-- <h3 class="heading1"><span>Select your flights </span> HERE </h3> -->
 
                     <div class="dest-field">
                         <input type="text" placeholder="To" onchange="search(this.value, 2)">
@@ -59,31 +57,12 @@
                 </div>
             </div>
         </div>
-        <!--<section class="section">
-            <div class="brands-center container">
-            <div class="brand">
-                <img src="images/brand2.png" alt="" />
-            </div>
-            <div class="brand">
-                <img src="images/brand2.png" alt="" />
-            </div>
-            <div class="brand">
-                <img src="images/brand2.png" alt="" />
-            </div>
-            <div class="brand">
-                <img src="images/brand2.png" alt="" />
-            </div>
-            <div class="brand">
-                <img src="images/brand2.png" alt="" />
-            </div>
-            </div>
-        </section>-->
-
     <main>
+    <div class="bgimage2">
 
         <div class="container" style="display: none;">
           <div class="seating">
-              <img src="assests/travelling.png">
+
           </div>
             <div class="details">
                 <div class="title">
@@ -95,8 +74,8 @@
                     <select id="flightclass" class="input">
                         <option value="" disabled selected>Select Class</option>
                         <option value="Economy">Economy</option>
-                        <option value="Business Class">Business Class (500 Qd extra)</option>
-                        <option value="First Class">First Class (1000 Qd extra)</option>
+                        <option value="Business Class">Business Class (£800 Qd extra)</option>
+                        <option value="First Class">First Class (£1500 Qd extra)</option>
                     </select>
                 </div>
                 <div>
@@ -111,54 +90,59 @@
             </div>
             <div class="addons">
                 <div class="title">
-                    <span>Add-ons</span>
+                    <span>6A Add-ons & Services</span>
                 </div>
-                <p class="info"> ( 300 Sb each )</p>
+                <p class="info"> ( £599 Qd each )</p>
                 <div class="options">
                     <input id="opt1" type="checkbox">
                     <label for="opt1">
-                        Inflight meal
+                       Lounge access & Services
                     </label>
                     <input id="opt2" type="checkbox">
                     <label for="opt2">
-                        Extra Legroom
+                        Fast Forward & Travel Assistance
                     </label>
                     <input id="opt3" type="checkbox">
                     <label for="opt3">
-                        Excess bagagge
+                        Inflight meal
                     </label>
                     <input id="opt4" type="checkbox">
                     <label for="opt4">
-                       Lounge access
+                        Extra Legroom
                     </label>
                     <input id="opt5" type="checkbox">
                     <label for="opt5">
-                        VIP boarding
+                        Anti-gravity experience
                     </label>
                     <input id="opt6" type="checkbox">
                     <label for="opt6">
-                        Anti-gravity experience
+                        Excess bagagge
                     </label>
+
                 </div>
+                <a href="booking.html" class="button">Check flights  <i class="fas fa-hand-point-left"></i></a>
+
                 <div class="btn">
-                    <span class="btn-text" onClick="showReceipt()">Confirm</span>
+                    <span class="btn-text" onClick="showReceipt()">Confirm Your Booking</span>
                 </div>
             </div>
-
-
         </div>
+    </div>
+    <div class="bgimage3">
         <div class="receipt" style="display: none;">
             <div class="tick">
-                <img src="images/tick.svg">
+                
             </div>
             <div class="title">
                 <span>Booking confirmed </span>
             </div>
             <div class="flight-data">
             </div>
+            <a href="index.html" style="width: 45%;" class="button1"><i class="fas fa-home"></i> Back To Home </a>
         </div>
+    </div>
     </main>
-    <script src="js/script.js"></script>
+
     <script src="js/booking.js"></script>
 </body>
 </html>
