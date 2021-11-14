@@ -154,57 +154,27 @@ section {
   cursor: pointer;
   display: none;
 }
-
-.home {
-  margin: 0 auto;
-  margin-top: 9rem;
-  width: 90%;
-  border-radius: 1rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 17, 17, 0.7)), to(rgba(17, 17, 17, 0.7))), url(../images/home-bg.jpg) no-repeat;
-  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../images/home-bg.jpg) no-repeat;
+.home{
+  background-image: linear-gradient(rgba(49, 46, 46, 0.7),rgba(46, 42, 42, 0.7)),url(../assests/bg-masthead.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  min-height: 80vh;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-bottom: 5rem;
+  background-position: center center;
+  text-align: center;
+  width:100vw;
+  height: 100vh;
 }
+.landingText{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
 
 .home .content {
   text-align: center;
 }
 
-.home .content span {
-  font-weight: bolder;
-  color: transparent;
-  -webkit-text-stroke: 0.1rem #fff;
-  font-size: 4vw;
-  display: block;
-}
-
-.home .content h3 {
-  font-size: 6vw;
-  color: rgb(247, 209, 255);
-}
-
-.home .content p {
-  max-width: 60rem;
-  margin: 1rem auto;
-  font-size: 1.4rem;
-  color: #aaa;
-  line-height: 2;
-}
-#about_anchor{
-  overflow-x: hidden;
-}
 
 /* .about-box h1 {
   color: rgb(247, 209, 255);
@@ -384,7 +354,7 @@ transition: 0.8s;
       -ms-flex: 1 1 20rem;
           flex: 1 1 20rem;
   border-radius: .5rem;
-  background:rgb(22, 22, 22) ;
+  background:rgb(39, 37, 37) ;
   -webkit-box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.05);
           box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.05);
   display: -webkit-box;
@@ -805,9 +775,7 @@ transition: 0.8s;
     font-size: 2rem;
     display: block;
   }
-  .home {
-    margin-top: 10rem;
-  }
+
   .home .content span {
     font-size: 8vw;
   }
