@@ -159,7 +159,7 @@ section {
   margin: 0 auto;
   margin-top: 8rem;
   width: 100vw;
-  
+
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 17, 17, 0.7)), to(rgba(17, 17, 17, 0.7))), url(../images/home-bg.jpg) no-repeat;
   background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../images/bg.jpg) no-repeat;
   background-size: cover;
@@ -829,3 +829,58 @@ transition: 0.8s;
     font-size: 2.7rem;
   }
 }
+
+
+.box {
+	border-radius: 1rem;
+	overflow: hidden;
+	background: #222;
+  }
+
+.box:hover img {
+	-webkit-transform: scale(1.1);
+			transform: scale(1.1);
+  }
+
+.box .image {
+	height: 20rem;
+	overflow: hidden;
+	width: 100%;
+  }
+
+   .box .image img {
+	height: 100%;
+	width: 100%;
+	-o-object-fit: cover;
+	   object-fit: cover;
+  }
+
+   .box .content {
+	padding: 2rem;
+	text-align: center;
+  }
+
+   .box .content h3 {
+	font-size: 2rem;
+	color: #fff;
+  }
+
+   .box .content p {
+	padding: 1rem 0;
+	font-size: 1.4rem;
+	color: rgb(226, 200, 200);
+	line-height: 2;
+  }
+
+   .box .content a {
+	font-size: 1.7rem;
+	color: #e274fd;
+  }
+
+   .box .content a:hover i {
+	padding-left: 1rem;
+  }
+
+   .box .content a i {
+	padding-right: .5rem;
+  }
